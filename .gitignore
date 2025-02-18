@@ -1,0 +1,16 @@
+Makefile
+Makefile.in
+aclocal.m4
+build-aux
+autom4te.cache
+chcon
+chcon.o
+configure
+config.log
+config.status
+*~
+.deps/
+build/
+/subprojects/*
+!/subprojects/*.wrap
+.cache/
