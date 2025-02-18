@@ -61,12 +61,6 @@ Exit status:
 int
 main (int argc, char **argv)
 {
-  if (argc <= 1)
-    {
-      usage (argv[0], false);
-      return EXIT_FAILURE;
-    }
-
   std::optional<std::string> specified_vc;
   if (argc == 2)
     {
