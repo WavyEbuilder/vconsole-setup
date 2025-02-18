@@ -64,7 +64,8 @@ env_parser::from_ifstream (std::istream &input, const on_push &push)
   auto push_kv = [&] () {
     if (last_key_whitespace != std::string::npos)
       key.erase (last_key_whitespace);
-    if (state == State::Value && last_value_whitespace != std::string::npos)
+    if (state == State::Value
+        && last_value_whitespace != std::string::npos)
       value.erase (last_value_whitespace);
     return push (line, key, value);
   };
